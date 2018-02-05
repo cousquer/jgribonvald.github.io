@@ -16,6 +16,68 @@
     <link rel="stylesheet" href="css/esup-theme.css">
 
     <link rel="stylesheet" href="plugin/highlight/default.min.css">
+    <script type="text/css" >
+      #smiley-wrapper {
+        max-width: 300px;
+        margin: 120px auto;
+        padding: 0px 20px;
+      }
+      .smiley {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        margin-right: 20px;
+      }
+      .smiley-green {
+        background: #a9db7a;
+        border: 5px solid #92c563;
+        position: relative;
+      }
+      .smiley-green .left-eye {
+        width: 18%;
+        height: 18%;
+        background: #84b458;
+        position: relative;
+        top: 29%;
+        left: 22%;
+        border-radius: 50%;
+        float: left;
+      }
+      .smiley-green .right-eye {
+        width: 18%;
+        height: 18%;
+        border-radius: 50%;
+        position: relative;
+        background: #84b458;
+        top: 29%;
+        right: 22%;
+        float: right;
+      }
+      .smiley-green .smile {
+        position: absolute;
+        top :67%;
+        left: 16.5%;
+        width: 70%;
+        height: 20%;
+        overflow: hidden;
+      }
+      .smiley-green .smile:after, .smiley-green .smile:before {
+        content: "";
+        position:absolute;
+        top: -50%;
+        left: 0%;
+        border-radius: 50%;
+        background: #84b458;
+        height: 100%;
+        width: 97%;
+      }
+      .smiley-green .smile:after {
+        background: #84b458;
+        height: 80%;
+        top: -40%;
+        left: 0%;
+      }
+    </script>
 
 
   </head>
@@ -75,6 +137,91 @@
               <li>Retour des usagers</li>
               <li>Un aperçu des applications</li>
             </ol>
+          </div>
+          <footer>
+            <img src="./img/communaute.png" alt="">
+          </footer>
+        </section>
+
+        <!--///////////////////////////////////////////-->
+
+        <section>
+          <header>
+            <h2>Rappel présentation ESUP Days 22</h2>
+            <h3 class="shadow">Contexte</h3>
+          </header>
+          <div class="slide-content">
+            <p><ul>
+              Chiffres ENT :
+              <li>~250 établissements</li>
+              <li>jusqu'à 140 000 connexions par jour</li>
+              <li>+ de 120 000 utilisateurs distincts par mois</li>
+              <li>des chefs d'établissement pas toujours impliqués</li>
+            </ul>
+            </p>
+            <p>
+            <ul>
+              Étude des usages :
+              <li>problèmes d'ergonomie -> refonte complète de l'ENT (portail, et services)</li>
+              <li>Esup-News et autres services vieillissant/devenus inadaptés</li>
+            </ul>
+            </p>
+          </div>
+          <footer>
+            <img src="./img/communaute.png" alt="">
+          </footer>
+        </section>
+
+        <!--///////////////////////////////////////////-->
+
+        <section>
+          <header>
+            <h2>Rappel présentation ESUP Days 22</h2>
+            <h3 class="shadow">Les besoins</h3>
+          </header>
+          <div class="slide-content">
+            <ul>
+              <li>communiquer aux différents publics (parents, élèves, personnels, ...)</li>
+              <li>pouvoir déléguer/faire participer les différentes populations</li>
+              <li>simple et ergonomique pour les producteurs d'informations</li>
+              <li>paramétrage le plus simple possible</li>
+              <li>restitutions la mieux adaptée et intégrée pour différents besoins : actualités, flash-infos, documents, alertes, ... </li>
+              <li>attractivité de la page d'accueil ENT</li>
+              <li>mobilité (RWD)</li>
+              <li>solution évolutive pour étendre les usages</li>
+            </ul>
+          </div>
+          <footer>
+            <img src="./img/communaute.png" alt="">
+          </footer>
+        </section>
+
+        <!--///////////////////////////////////////////-->
+
+        <section>
+          <header>
+            <h2>Rappel présentation ESUP Days 22</h2>
+            <h3 class="shadow">Les technologies</h3>
+          </header>
+          <div class="slide-content">
+            <ul>
+              <li>Backend java en REST (full Spring) :
+              <ul>
+                <li>Spring-boot</li>
+                <li>Spring-security</li>
+                <li>Spring-data</li>
+                <li>Spring-ldap</li>
+                <li>Jackson (json)</li>
+                <li>Liquibase (gestion des modifications du schema BD)</li>
+              </ul>
+              </li>
+              <li>Frontend (single page app) :
+              <ul>
+                <li>AngularJS</li>
+                <li>Bootstrap</li>
+              </ul>
+              </li>
+            </ul>
           </div>
           <footer>
             <img src="./img/communaute.png" alt="">
@@ -210,13 +357,14 @@
             <h2>Retour des usagers</h2>
           </header>
           <div class="slide-content">
-            <p>
-              Nous n'avons que des retours positifs...
-            </p>
-            <p>
-              et de nouvelles fonctionnalitées à implémenter !
-            </p>
-
+            <p style="text-align: center;"><img src="./img/smiley.png" alt=""><img src="./img/smiley.png" alt=""><img src="./img/smiley.png" alt=""></p>
+            <ul>
+            Usages :
+              <li>133 établissements ont publiés au moins 1 fois </li>
+              <li>2891 actualités</li>
+              <li>285 flash-infos</li>
+              <li>753 documents</li>
+            </ul>
           </div>
           <footer>
             <img src="./img/communaute.png" alt="">
